@@ -1,7 +1,7 @@
 
 class TV:
     numTV = 0
-    def __init__(self, marca, estado, control = "No", canal = 1, precio = 500, volumen = 1):
+    def __init__(self, marca, estado, control = None, canal = 1, precio = 500, volumen = 1):
         self._marca = marca
         self._canal = canal
         self._precio = precio
@@ -40,6 +40,9 @@ class TV:
     @classmethod
     def getNumTV(cls):
         return cls.numTV
+    @classmethod
+    def setNumTV(cls, numero):
+        cls.numTV = numero
     
     def turnOn(self):
         self._estado = True
