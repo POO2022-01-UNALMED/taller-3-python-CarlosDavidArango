@@ -3,9 +3,9 @@ class Control:
         self._tv =  tv
         self._tv.setControl(self)
     
-    def getTV(self):
+    def getTv(self):
         return self._tv
-    def setTV(self, nuevoTv):
+    def setTv(self, nuevoTv):
         self._tv = nuevoTv
 
     def turnOn(self):
